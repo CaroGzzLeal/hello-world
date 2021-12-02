@@ -60,6 +60,31 @@ ______
 
 
 
+````c++
+Serie leeDatosSerie() {
+    std::string id;
+    std::string titulo;
+    int duracion;
+    std::string genero;
+    double calificacionPromedio;
+    int cantEpisodios;
+    
+    //Leer los datos de entrada
+    cout << "Ingresa el id: ";
+    cin >> id;
+    cout << "Ingresa el título: ";
+    cin >> titulo;
+    cout << "Ingresa la duración en minutos: ";
+    cin >> duracion;
+    cout << "Ingresa el género: ";
+    cin >> genero;
+    cout << "Ingresa la calificación Promedio: ";
+    cin >> calificacionPromedio;
+    cout << "Ingresa la cantidad de Episodios: ";
+    cin >> cantEpisodios;
+    cout << "\n";
+    return Serie(id, titulo, duracion, genero, calificacionPromedio, cantEpisodios);
+}
 
 
 
